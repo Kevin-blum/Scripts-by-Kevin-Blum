@@ -4,7 +4,7 @@
 # Enter the Server Name
 $ServerName = Read-Host "Enter the Server Name"
 
-# Delta Sync
+# Initial Sync
 Enter-PSSession -ComputerName $ServerName
 Start-ADSyncSyncCycle -PolicyType Initial
 
